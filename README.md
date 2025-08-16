@@ -169,7 +169,7 @@ finFuncion
 
 // Recorrido con 'mientras' para imprimir boletines
 mostrar "Boletines:"
-anotar i = 0
+anotar numero i = 0
 mientras i < cantidad hacer
     anotar alumno nombre = alumnos[i]
     anotar nota n = notas[i]
@@ -189,14 +189,11 @@ anotar cantidad = 2
 
 mostrar "Limpiando listas..."
 limpiar alumnos
+limpiar notas
+FIN.
 ```
 ## Salida
 ```
-Validando notas ingresadas:
-Nota 0 válida: 8
-Nota 1 válida: 6
-Nota 2 válida: 10
-El primer alumno no está desaprobado
 Boletines:
 Alumno: Lucía | Nota: 8 | Estado: aprobado
 Alumno: Martín | Nota: 6 | Estado: aprobado
@@ -295,10 +292,6 @@ Limpiando listas...
 
 <comentario_linea>  ::= "//" {cualquier_caracter_excepto_salto}
 <comentario_bloque> ::= "/*" {cualquier_caracter} "*/"
-
-limpiar notas
-
-FIN.
 ```
 # Clase 1
 ## Introduccion
