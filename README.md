@@ -114,6 +114,7 @@ Se admiten paréntesis para agrupar: ( … ).
 
 - Todo valor se convierte a texto al imprimir/concatenar en mostrar.
 
+## BNF
 ```
 <programa> ::= INICIO <sentencias> FIN.
 
