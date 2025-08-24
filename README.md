@@ -110,7 +110,7 @@ Se admiten paréntesis para agrupar: ( … ).
 ```
 INICIO
 
-// Listas: alumnos y sus notas. Se inicializan vacias
+// Listas: alumnos y sus notas. Se inicializan vacías
 anotar lista<alumno> alumnos = vacia
 anotar lista<nota>   notas   = vacia
 
@@ -124,16 +124,16 @@ agregar 5        a notas
 agregar "Sofía"  a alumnos
 agregar 10       a notas
 
-//["Lucía", "Martín", "Sofía"]
-//[8, 5, 10]
+// ["Lucía", "Martín", "Sofía"]
+// [8, 5, 10]
 
 // Cantidad de registros 
 anotar numero cantidad = 3
 
-// Corrección por índice (0-based): Martín pasa a 6
-anotar notas[1] = 6
-//["Lucía", "Martín", "Sofía"]
-//[8, 6, 10]
+// Corrección por índice (1-based): Martín pasa a 6
+anotar notas[2] = 6
+// ["Lucía", "Martín", "Sofía"]
+// [8, 6, 10]
 
 // Procedimiento: imprime un boletín simple
 procedimiento mostrarBoletin(alumno nombre, nota n, bool estado)
@@ -149,11 +149,11 @@ funcion bool estadoSegunNota(nota n)
             retornar desaprobado
 finFuncion
 
-// Función: promedio de n elementos de una lista de notas
+// Función: promedio de n elementos de una lista de notas (listas 1-based)
 funcion nota promedio(lista<nota> xs, numero n)
-    anotar numero i = 0
-    anotar nota   s = 0
-    mientras i < n hacer
+    anotar numero i = 1
+    anotar numero s = 0
+    mientras i <= n hacer
         anotar s = s + xs[i]
         anotar i = i + 1
     retornar s / n
@@ -161,8 +161,8 @@ finFuncion
 
 // Recorrido con 'mientras' para imprimir boletines
 mostrar "Boletines:"
-anotar numero i = 0
-mientras i < cantidad hacer
+anotar numero i = 1
+mientras i <= cantidad hacer
     anotar alumno nombre = alumnos[i]
     anotar nota n = notas[i]
     anotar bool est = estadoSegunNota(n)
@@ -175,8 +175,8 @@ mostrar "Promedio del curso: " + prom
 
 // Operaciones de lista: quitar y limpiar
 mostrar "Quitando última entrada..."
-quitar en alumnos[2]
-quitar en notas[2]
+quitar en alumnos[3]
+quitar en notas[3]
 anotar cantidad = 2
 
 mostrar "Limpiando listas..."
