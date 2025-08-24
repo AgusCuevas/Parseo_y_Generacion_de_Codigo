@@ -18,9 +18,9 @@ Es un lenguaje de programación educativa, con palabras clave que se relacionan 
 
 - **lista<tipo_base>** → lista tipada cuyos elementos son **numero**, **nota**, **alumno** o **bool**.
 
-  - No existen literales de lista; se crean vacías con vacia y se completan con operaciones.
+  - No existen literales de lista; se crean vacías con **vacia** y se completan con operaciones.
 
-  - Índices 0-based (el primer elemento es el índice 0).
+  - El primer indice de la lista es 1.
 
 ## Estructura de programa
 
@@ -49,26 +49,25 @@ Ej.: ```mostrar "Alumno: " + nombre + " | Nota: " + nota```
 ### Condicional
 
 ```evaluar <condicion>``` ejecuta un bloque ```si pasa:``` y, opcionalmente, un bloque ```si no pasa:```.
-Atajos legibles:
 
 Negación: ```no <condicion>```
 
-Rango: ```<identificador>``` entre ```<a>``` y ```<b>``` (equivale a ```a <= x y x <= b```, incluye los extremos)
+Rango: ```<identificador>``` entre ```<a>``` y ```<b>``` (equivale a ```a <= x y x <= b```)
 
 ### Iteración (únicamente mientras)
 
-Mientras <condicion> hacer repite mientras la condición sea verdadera.
+```mientras <condicion> hacer``` repite mientras la condición sea verdadera.
 
 ## Operaciones de lista
-- ```agregar <valor> a <lista>``` (append al final)
+- ```agregar <valor> a <lista>``` (Se agrega al final de lista)
 
-- ```quitar en <lista>[<indice>]``` (elimina por índice)
+- ```quitar en <lista>[<indice>]``` (Elimina por índice)
 
-- ```limpiar <lista>``` (deja la lista vacía)
+- ```limpiar <lista>``` (Deja la lista vacía)
 
 ## Funciones y procedimientos
 
-- **Funciones:** devuelven un valor con **retornar**, se usan en expresiones.
+- **Funciones:** devuelven un valor con **retornar**. Se aceptan parametros
 ```
 funcion <tipo> <nombre>(parámetros)
     sentencias
@@ -76,7 +75,7 @@ funcion <tipo> <nombre>(parámetros)
 finFuncion
 ```
 
-- **Procedimientos:** no devuelven valor; se invocan como sentencia.
+- **Procedimientos:** no devuelven valor; se invocan como sentencia. Se aceptan parametros
 ```
 procedimiento <nombre>(parámetros)
     sentencias
@@ -87,7 +86,6 @@ finProcedimiento
 - De línea: ```// comentario```
 
 - De bloque: ```/* comentario */```
-Se pueden ubicar donde se permita espacio en blanco; son ignorados por el parser.
 
 ## Operadores
 
@@ -103,10 +101,8 @@ Se admiten paréntesis para agrupar: ( … ).
 - nota debe estar en [1..10].
 
 - Tipos de listas estrictos (solo tipo_base permitido).
-
-- Índices válidos: enteros no negativos y dentro de rango.
-
-- Variables de función/procedimiento son locales; sombrean a globales.
+- 
+- Variables de función/procedimiento son locales.
 
 - Todo valor se convierte a texto al imprimir/concatenar en mostrar.
 
