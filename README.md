@@ -41,8 +41,6 @@ Un programa comienza con **INICIO** y termina con **FIN.**. Todas las sentencias
 
   - Asignación por índice: ```anotar <lista>[<indice>] = <valor>```
 
-No se permite declarar sin valor inicial. No se puede re-declarar un identificador en el mismo ámbito.
-
 ### Impresión
 
 **mostrar** acepta una expresión de texto que puede concatenar varias partes con + (variables, números, booleanos, accesos a lista, llamadas a función).
@@ -67,8 +65,6 @@ Mientras <condicion> hacer repite mientras la condición sea verdadera.
 - ```quitar en <lista>[<indice>]``` (elimina por índice)
 
 - ```limpiar <lista>``` (deja la lista vacía)
-
-Sugerencia de biblioteca: ```longitud(<lista>)``` → **numero** (si luego querés incorporarla como primitiva).
 
 ## Funciones y procedimientos
 
