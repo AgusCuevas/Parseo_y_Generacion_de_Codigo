@@ -50,8 +50,13 @@
 
 <termino> ->  <factor> <op_mul> <termino> | <factor>
 
-<factor> -> <numero> | <texto> | <identificador> | <booleano> 
-          | <acceso_lista> | <llamada_funcion> | ( <valor> )
+<factor> -> <numero>
+            | <texto>
+            | <identificador>
+            | <booleano>
+            | <acceso_lista>
+            | <llamada_funcion>
+            | ( <valor> )
 
 <op_suma> -> + | -
 
