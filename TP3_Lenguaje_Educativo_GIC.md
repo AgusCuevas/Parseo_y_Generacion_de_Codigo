@@ -1,4 +1,23 @@
 ## GIC
+
+ΣT = ```{ INICIO, FIN, anotar, numero, nota, alumno, bool, lista, vacia, mostrar, 
+  evaluar, si, pasa, no, y, o, mientras, hacer, retornar, finFuncion, 
+  procedimiento, finProcedimiento, funcion, aprobado, desaprobado, 
+  agregar, quitar, en, limpiar, entre, a, =, , ,==, !=, <, >, <=, >=, +, -, *, /, 
+  (, ), [, ], ", //, /*, */, :, cualquier_caracter_excepto_salto, cualquier_caracter }```
+
+ΣN = ```{ <programa>, <sentencias>, <sentencia>, <asignacion>, <tipo>, <tipo_base>, 
+  <impresion>, <expresion_texto>, <valor_texto>, <condicional>, <bloque_condicional>, 
+  <condicion>, <iteracion>, <valor>, <termino>, <factor>, <op_suma>, <op_mul>, 
+  <acceso_lista>, <operacion_lista>, <definicion_funcion>, <definicion_procedimiento>, 
+  <llamada_funcion>, <llamada_procedimiento>, <parametros_opt>, <lista_parametros>, 
+  <parametro>, <argumentos_opt>, <lista_argumentos>, <booleano>, 
+  <operador_relacional>, <operador_logico>, <numero>, <texto>, <contenido_texto>, 
+  <identificador>, <resto_identificador>, <letra>, <digito>, 
+  <comentario_linea>, <comentario_linea_contenido>, 
+  <comentario_bloque>, <comentario_bloque_contenido> }```
+
+P =
 ```
 <programa> -> INICIO <sentencias> FIN
 
@@ -120,7 +139,11 @@
 <comentario_bloque_contenido> -> cualquier_caracter <comentario_bloque_contenido> | λ
 ```
 
-## Programa
+S= ```<programa>```
+
+------------------------------------------------
+
+## Programa ejemplo
 
 INICIO
 
