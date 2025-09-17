@@ -1,7 +1,7 @@
 # Parseo_y_Generacion_de_Codigo
 
 ## TP1
-Mapa conceptual - Traductor ([TP 1](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/TP1_Cuadro))
+Mapa conceptual - Traductor ([TP 1](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/TP1_Cuadro.md))
 
 -------------------------------
 
