@@ -1,0 +1,102 @@
+3_
+```python
+class Lexer: 
+
+# definir tokens
+  ERROR = -1;
+  ACEPTAR = 0;
+
+  def __init__(self, palabra): 
+        self.palabra = palabra
+        self.cursor = -1
+
+  def getCaracter(self):
+        if (self.cursor + 1) < len(self.palabra):
+            self.cursor += 1  
+            return self.palabra[self.cursor]
+        return '*'
+
+  def t_q0(self):
+    caracter = self.getCaracter()
+    if caracter == 'a':
+      return self.t_q1()
+    if caracter == 'b':
+      return self.t_q4()
+    return self.ERROR
+  
+  def t_q1(self):
+      caracter = self.getCaracter()
+      if caracter == 'a':
+        return self.t_q1()
+      if caracter == 'b':
+        return self.t_q2()
+      return self.ERROR
+
+
+  def t_q2(self):
+      caracter = self.getCaracter()
+      if caracter == 'a':
+        return self.t_q1()
+      if caracter == 'b':
+        return self.t_q3()
+      return self.ERROR
+
+  def t_q3(self):
+    caracter = self.getCaracter()
+    if caracter == 'a' or caracter == 'b':
+      return self.ERROR
+    return self.ACEPTAR
+    
+
+  def t_q4(self):
+      caracter = self.getCaracter()
+      if caracter == 'a':
+        return self.t_q1()
+      if caracter == 'b':
+        return self.t_q4()
+      return self.ERROR
+
+# construir scanner
+Lexer('ababababb').t_q0()
+```
+
+
+Sustituya las apariciones de un número par escrito en notación binaria por la cadena "BINARIO_PAR"
+``` Python
+class Lexer: 
+
+# definir tokens
+  ERROR = -1;
+  ACEPTAR = 0;
+
+  def __init__(self, numero): 
+        self.esBinario = 'BINARIO_PAR'
+        self.cursor = -1
+        self.numero = numero
+
+  def getNumero(self):
+        if (self.cursor + 1) < len(self.numero):
+            self.cursor += 1  
+            return self.numero[self.cursor]
+        return self.numero[self.cursor]
+
+  def esUltimo(self):
+        if (self.cursor + 1) < len(self.numero):
+            self.cursor += 1  
+            return self.numero[self.cursor]
+        return '*'
+
+  def t_q0(self):
+    numero = self.getNumero()
+    esFinal = self.esUltimo()
+    if esFinal != '*':
+      return self.t_q0()
+
+    if numero == '0' and esFinal == '*': 
+      return self.esBinario
+    else:
+      return self.ERROR
+
+# construir scanner
+Lexer('1011').t_q0()
+```
