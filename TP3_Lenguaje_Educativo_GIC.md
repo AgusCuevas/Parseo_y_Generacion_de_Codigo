@@ -151,7 +151,7 @@ anotar nota x = (2 + 3) * 2
 
 FIN
 
-## Derivación por la izquierda
+## Análisis Sintáctico Descendente (ASD) - Derivación por la izquierda
 
 Programa
 
@@ -221,7 +221,7 @@ Programa
 
 ⇒ INICIO anotar nota x = ( 2 + 3 ) * 2 **[λ]** FIN
 
-## Derivación por la derecha
+## Análisis Sintáctico Ascendente (ASA) - Derivación por la derecha
 
 Programa
 
@@ -294,3 +294,75 @@ Programa
 ⇒ INICIO anotar **[nota]** x = ( 2 + 3 ) * 2 FIN
 
 ⇒ INICIO anotar nota x = ( 2 + 3 ) * 2 FIN
+
+### Orden Inverso a la derivación por derecha
+
+INICIO anotar nota x = ( 2 + 3 ) * 2 FIN
+
+⇒ INICIO anotar **[nota]** x = ( 2 + 3 ) * 2 FIN
+
+⇒ INICIO anotar **[Tipo]** x = ( 2 + 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo **[x]** = ( 2 + 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo **[Identificador]** = ( 2 + 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( **[2]** + 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( **[Numero]** + 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( **[Factor]** + 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( **[Termino]** + 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( Termino **[+]** 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( Termino **[OpSuma]** 3 ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[3]** ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Numero]** ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Factor]** ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Termino]** ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( **[Termino OpSuma Valor]** ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = ( **[Valor]** ) * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = **[( Valor )]** * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = **[Factor]** * 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = Factor **[*]** 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = Factor **[OpMul]** 2 FIN
+
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[2]** FIN
+
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Numero]** FIN
+
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Factor]** FIN
+
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Termino]** FIN
+
+⇒ INICIO anotar Tipo Identificador = **[Factor OpMul Termino]** FIN
+
+⇒ INICIO anotar Tipo Identificador = **[Termino]** FIN
+
+⇒ INICIO anotar Tipo Identificador = **[Valor]** FIN
+
+⇒ INICIO anotar **[anotar Tipo Identificador = Valor]** FIN
+
+⇒ INICIO **[Asignacion]** FIN
+
+⇒ INICIO **[Sentencia]** FIN
+
+⇒ INICIO Sentencia **[λ]** FIN
+
+⇒ INICIO Sentencia **[Sentencias]** FIN
+
+⇒ INICIO **[Sentencias]** FIN
+
+Programa
