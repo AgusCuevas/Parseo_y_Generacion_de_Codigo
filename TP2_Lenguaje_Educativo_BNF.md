@@ -196,82 +196,132 @@ Limpiando listas...
 
 ## BNF
 ```
-<programa> ::= INICIO <sentencias> FIN.
+<programa> ::= INICIO <bloque> FIN.
 
-<sentencias> ::= <sentencia> <sentencias> | λ
+<bloque> ::= <sentencia> <bloque> | λ
 
-<sentencia> ::= <asignacion> | <impresion> | <condicional> | <iteracion>
+<sentencia> ::= <asignacion>
+              | <impresion>
+              | <condicional>
+              | <repeticion>
               | <definicion_funcion>
               | <definicion_procedimiento>
               | <llamada_procedimiento>
               | <operacion_lista>
 
-<asignacion> ::= anotar <tipo> <identificador> = <valor>
-               | anotar <identificador> = <valor>
+# -----------------------------
+# Asignaciones y tipos
+# -----------------------------
+<asignacion> ::= anotar <tipo> <identificador> = <expresion>
+               | anotar <identificador> = <expresion>
                | anotar lista<tipo_base> <identificador> = vacia
-               | anotar <identificador> [ <valor> ] = <valor>
+               | anotar <identificador> [ <expresion> ] = <expresion>
 
 <tipo> ::= numero | nota | alumno | bool | lista<tipo_base>
-
 <tipo_base> ::= numero | nota | alumno | bool
 
-<impresion> ::= mostrar <expresion_texto>
+# -----------------------------
+# Impresión (concatenación de texto)
+# -----------------------------
+<impresion> ::= mostrar <texto_concatenado>
 
-<expresion_texto> ::= <valor_texto> | <valor_texto> + <expresion_texto>
+<texto_concatenado> ::= <elemento_texto> <mas_texto>
+<mas_texto> ::= + <elemento_texto> <mas_texto> | λ
 
-<valor_texto> ::= <texto> | <identificador> | <booleano> | <numero>
-                | <acceso_lista> | <llamada_funcion>
+<elemento_texto> ::= <texto>
+                   | <numero>
+                   | <booleano>
+                   | <identificador> <uso_variable>
+                   | "(" <expresion> ")"
 
+# -----------------------------
+# Condicional con precedencia (no > y > o) y 'entre'
+# -----------------------------
 <condicional> ::= evaluar <condicion> <bloque_condicional>
 
-<bloque_condicional> ::= si pasa: <sentencias>
-                       | si pasa: <sentencias> si no pasa: <sentencias>
+<bloque_condicional> ::= si pasa: <bloque> <opcional_sino>
+<opcional_sino> ::= si no pasa: <bloque> | λ
 
-<condicion> ::= no <condicion>
-              | <identificador> entre <valor> y <valor>
-              | <valor> <operador_relacional> <valor>
-              | <condicion> <operador_logico> <condicion>
-              | <booleano> | <identificador>
+<condicion> ::= <condicion_o>
 
-<iteracion> ::= mientras <condicion> hacer <sentencias>
+<condicion_o> ::= <condicion_y> <mas_o>
+<mas_o> ::= o <condicion_y> <mas_o> | λ
 
-<valor>   ::= <valor> <op_suma> <termino> | <termino>
-<termino> ::= <termino> <op_mul> <factor> | <factor>
-<factor>  ::= <numero> | <texto> | <identificador> | <booleano>
-            | <acceso_lista> | <llamada_funcion> | "(" <valor> ")"
+<condicion_y> ::= <condicion_no> <mas_y>
+<mas_y> ::= y <condicion_no> <mas_y> | λ
+
+<condicion_no> ::= no <condicion_no> | <comparacion>
+
+# —— FACTORIZADA PARA LL(1) ——
+<comparacion> ::= <expresion> <cola_comparacion>
+<cola_comparacion> ::= <operador_relacional> <expresion>
+                     | entre <expresion> y <expresion>
+                     | λ
+# (Semánticamente, en 'entre' podés exigir que la primera <expresion> sea un identificador.)
+
+# -----------------------------
+# Repetición (bucle mientras)
+# -----------------------------
+<repeticion> ::= mientras <condicion> hacer <bloque>
+
+# -----------------------------
+# Expresiones aritméticas (sin recursión izquierda)
+# -----------------------------
+<expresion> ::= <termino> <suma_opcional>
+<suma_opcional> ::= <op_suma> <termino> <suma_opcional> | λ
+
+<termino> ::= <factor> <producto_opcional>
+<producto_opcional> ::= <op_mul> <factor> <producto_opcional> | λ
+
+<factor> ::= <numero>
+           | <texto>
+           | <booleano>
+           | "(" <expresion> ")"
+           | <identificador> <uso_variable>
+
+<uso_variable> ::= "(" <argumentos> ")"    # llamada a función
+                 | "[" <expresion> "]"     # acceso a lista
+                 | λ                       # variable simple
 
 <op_suma> ::= + | -
 <op_mul>  ::= * | /
 
-<acceso_lista> ::= <identificador> [ <valor> ]
-
-<operacion_lista> ::= agregar <valor> a <identificador>
-                    | quitar en <identificador> [ <valor> ]
+# -----------------------------
+# Listas
+# -----------------------------
+<operacion_lista> ::= agregar <expresion> a <identificador>
+                    | quitar en <identificador> "[" <expresion> "]"
                     | limpiar <identificador>
 
-<definicion_funcion> ::= funcion <tipo> <identificador> ( <parametros_opt> )
-                         <sentencias>
-                         retornar <valor>
+# -----------------------------
+# Funciones y procedimientos
+# -----------------------------
+<definicion_funcion> ::= funcion <tipo> <identificador> "(" <parametros> ")"
+                         <bloque>
+                         retornar <expresion>
                          finFuncion
 
-<definicion_procedimiento> ::= procedimiento <identificador> ( <parametros_opt> )
-                               <sentencias>
+<definicion_procedimiento> ::= procedimiento <identificador> "(" <parametros> ")"
+                               <bloque>
                                finProcedimiento
 
-<llamada_funcion> ::= <identificador> ( <argumentos_opt> )
-<llamada_procedimiento> ::= <identificador> ( <argumentos_opt> )
+<llamada_funcion> ::= <identificador> "(" <argumentos> ")"
+<llamada_procedimiento> ::= <identificador> "(" <argumentos> ")"
 
-<parametros_opt> ::= λ | <lista_parametros>
-<lista_parametros> ::= <parametro> | <parametro> , <lista_parametros>
+<parametros> ::= <lista_parametros> | λ
+<lista_parametros> ::= <parametro> <parametros_extra>
+<parametros_extra> ::= , <parametro> <parametros_extra> | λ
 <parametro> ::= <tipo> <identificador>
 
-<argumentos_opt> ::= λ | <lista_argumentos>
-<lista_argumentos> ::= <valor> | <valor> , <lista_argumentos>
+<argumentos> ::= <lista_argumentos> | λ
+<lista_argumentos> ::= <expresion> <argumentos_extra>
+<argumentos_extra> ::= , <expresion> <argumentos_extra> | λ
 
+# -----------------------------
+# Léxico y operadores
+# -----------------------------
 <booleano> ::= aprobado | desaprobado
-
 <operador_relacional> ::= == | != | < | > | <= | >=
-<operador_logico> ::= y | o
 
 <numero> ::= <digito> { <digito> }
 <texto> ::= '"' { <letra> | <digito> } '"'
