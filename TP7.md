@@ -1,6 +1,8 @@
+```
 INICIO 
   anotar nota x = ( 2 + 3 ) * 2 
 FIN.
+```
 
 ## TT
 | Cod  | Nombre | TipoBase | Padre  | Dimensión | Mínimo | Máximo | Ámbito      |
@@ -14,6 +16,7 @@ FIN.
 
 ------------------------------------------
 
+```
 INICIO
   anotar nota n1 = 8
   anotar nota n2 = 6
@@ -24,6 +27,7 @@ INICIO
     mostrar "Se modifico la mayor nota"
   mostrar mayor
 FIN.
+```
 
 ## TT
 | Nombre | TipoBase | Padre | Dimensión | Mínimo | Máximo | Ámbito      |
