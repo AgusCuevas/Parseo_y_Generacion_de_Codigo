@@ -6,7 +6,7 @@ INICIO
 
 anotar nota x = (2 + 3) * 2
 
-FIN
+FIN.
 ```
 
 | **Pila**                                                                                               | **Entrada**                                 | **Transición δ**                                                            |
