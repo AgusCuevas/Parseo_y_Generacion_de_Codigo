@@ -1,3 +1,5 @@
+# Tabla de Tipos y de Símbolos
+
 ```
 INICIO 
   anotar nota x = ( 2 + 3 ) * 2 
