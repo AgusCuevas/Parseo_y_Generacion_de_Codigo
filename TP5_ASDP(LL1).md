@@ -1,10 +1,19 @@
-**Cadena:** INICIO anotar nota x = ( 2 + 3 ) * 2 FIN .
+Análisis Sintáctico Descendente Predictivo 
+
+## Cadena
+```
+INICIO
+
+anotar nota x = (2 + 3) * 2
+
+FIN.
+```
 
 ---------------------------------------------
 
 **GIC** - Para cadena 
 ```
-<programa> → INICIO <bloque> FIN .
+<programa> → INICIO <bloque> FIN.
 <bloque> → <sentencia> <bloque> | λ
 <sentencia> → <asignacion>
 <asignacion> → anotar <tipo> <identificador> = <expresion>
