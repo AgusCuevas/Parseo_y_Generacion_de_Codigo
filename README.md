@@ -38,3 +38,6 @@ Análisis Sintáctico Ascendente ([TP 6](https://github.com/AgusCuevas/Parseo_y_
 Tabla de Tipos y de Símbolos ([TP 7](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/TP7_TT_TS.md))
 
 -------------------------------
+
+## TP7
+Semantica ([TP 8](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/Semantica.md)
