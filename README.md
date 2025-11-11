@@ -40,4 +40,4 @@ Tabla de Tipos y de Símbolos ([TP 7](https://github.com/AgusCuevas/Parseo_y_Gen
 -------------------------------
 
 ## TP8
-Semantica ([TP 8](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/Semantica.md)
+Semantica ([TP 8](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/Semantica.md))
