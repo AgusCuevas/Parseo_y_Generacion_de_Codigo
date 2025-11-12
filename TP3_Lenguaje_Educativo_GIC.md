@@ -188,143 +188,143 @@ FIN
 
 Programa
 
-⇒ INICIO **[Sentencias]** FIN
+⇒ INICIO **[Bloque]** FIN
 
-⇒ INICIO **[Sentencia]** Sentencias FIN
+⇒ INICIO **[Sentencia}** Bloque FIN
 
-⇒ INICIO **[Asignacion]** Sentencias FIN
+⇒ INICIO **[Asignacion}** Bloque FIN
 
-⇒ INICIO **[anotar Tipo Identificador = Valor]** Sentencias FIN
+⇒ INICIO **[anotar Tipo Identificador = Expresion}** Bloque FIN
 
-⇒ INICIO anotar **[Tipo]** Identificador = Valor Sentencias FIN
+⇒ INICIO anotar **[Tipo}** Identificador = Expresion Bloque FIN
 
-⇒ INICIO anotar **[nota]** Identificador = Valor Sentencias FIN
+⇒ INICIO anotar **[nota}** Identificador = Expresion Bloque FIN
 
-⇒ INICIO anotar nota **[Identificador]** = Valor Sentencias FIN
+⇒ INICIO anotar nota **[Identificador}** = Expresion Bloque FIN
 
-⇒ INICIO anotar nota **[x]** = Valor Sentencias FIN
+⇒ INICIO anotar nota **[x}** = Expresion Bloque FIN
 
-⇒ INICIO anotar nota x = **[Valor]** Sentencias FIN
+⇒ INICIO anotar nota x = **[Expresion}** Bloque FIN
 
-⇒ INICIO anotar nota x = **[Termino]** Sentencias FIN
+⇒ INICIO anotar nota x = **[Termino}** Bloque FIN
 
-⇒ INICIO anotar nota x = **[Factor OpMul Termino]** Sentencias FIN
+⇒ INICIO anotar nota x = **[Factor OpMul Termino}** Bloque FIN
 
-⇒ INICIO anotar nota x = **[( Valor )]** OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = **[( Expresion )}** OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( **[Valor]** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( **[Expresion}** ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( **[Termino OpSuma Valor]** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( **[Termino OpSuma Expresion}** ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( **[Termino] OpSuma Valor** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( **[Termino}** OpSuma Expresion ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( **[Factor] OpSuma Valor** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( **[Factor}** OpSuma Expresion ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( **[Numero] OpSuma Valor** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( **[Numero}** OpSuma Expresion ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( **[2] OpSuma Valor** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( **[2}** OpSuma Expresion ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 **[OpSuma]** Valor ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 **[OpSuma}** Expresion ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 **[+]** Valor ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 **[+}** Expresion ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + **[Valor]** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + **[Expresion}** ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + **[Termino]** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + **[Termino}** ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + **[Factor]** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + **[Factor}** ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + **[Numero]** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + **[Numero}** ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + **[3]** ) OpMul Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + **[3}** ) OpMul Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) **[OpMul]** Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) **[OpMul}** Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) **[*]** Termino Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) **[*}** Termino Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) * **[Termino]** Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) * **[Termino}** Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) * **[Factor]** Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) * **[Factor}** Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) * **[Numero]** Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) * **[Numero}** Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) * **[2]** Sentencias FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) * **[2}** Bloque FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) * 2 **[Sentencias]** FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) * 2 **[Bloque}** FIN
 
-⇒ INICIO anotar nota x = ( 2 + 3 ) * 2 **[λ]** FIN
+⇒ INICIO anotar nota x = ( 2 + 3 ) * 2 **[λ}** FIN
 
 ## Análisis Sintáctico Ascendente (ASA) - Derivación por la derecha
 
 Programa
 
-⇒ INICIO **[Sentencias]** FIN
+⇒ INICIO **[Bloque}** FIN
 
-⇒ INICIO Sentencia **[Sentencias]** FIN
+⇒ INICIO Sentencia **[Bloque}** FIN
 
-⇒ INICIO Sentencia **[λ]** FIN
+⇒ INICIO Sentencia **[λ}** FIN
 
-⇒ INICIO **[Sentencia]** FIN
+⇒ INICIO **[Sentencia}** FIN
 
-⇒ INICIO **[Asignacion]** FIN
+⇒ INICIO **[Asignacion}** FIN
 
-⇒ INICIO **[anotar Tipo Identificador = Valor]** FIN
+⇒ INICIO **[anotar Tipo Identificador = Expresion}** FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Valor]** FIN
+⇒ INICIO anotar Tipo Identificador = **[Expresion}** FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Termino]** FIN
+⇒ INICIO anotar Tipo Identificador = **[Termino}** FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Factor OpMul Termino]** FIN
+⇒ INICIO anotar Tipo Identificador = **[Factor OpMul Termino}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Termino]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Termino}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Factor]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Factor}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Numero]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Numero}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[2]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[2}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor **[OpMul]** 2 FIN
+⇒ INICIO anotar Tipo Identificador = Factor **[OpMul}** 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor **[*]** 2 FIN
+⇒ INICIO anotar Tipo Identificador = Factor **[*}** 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Factor]** * 2 FIN
+⇒ INICIO anotar Tipo Identificador = **[Factor}** * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = **[( Valor )]** * 2 FIN
+⇒ INICIO anotar Tipo Identificador = **[( Expresion )}** * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Valor]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Expresion}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Termino OpSuma Valor]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Termino OpSuma Expresion}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Valor]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Expresion}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Termino]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Termino}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Factor]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Factor}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Numero]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Numero}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[3]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[3}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino **[OpSuma]** 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino **[OpSuma}** 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino **[+]** 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino **[+}** 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Termino]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Termino}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Factor]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Factor}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Numero]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Numero}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[2]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[2}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo **[Identificador]** = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo **[Identificador}** = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo **[x]** = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo **[x}** = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar **[Tipo]** x = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar **[Tipo}** x = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar **[nota]** x = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar **[nota}** x = ( 2 + 3 ) * 2 FIN
 
 ⇒ INICIO anotar nota x = ( 2 + 3 ) * 2 FIN
 
@@ -332,70 +332,70 @@ Programa
 
 INICIO anotar nota x = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar **[nota]** x = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar **[nota}** x = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar **[Tipo]** x = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar **[Tipo}** x = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo **[x]** = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo **[x}** = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo **[Identificador]** = ( 2 + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo **[Identificador}** = ( 2 + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[2]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[2}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Numero]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Numero}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Factor]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Factor}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Termino]** + 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Termino}** + 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino **[+]** 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino **[+}** 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino **[OpSuma]** 3 ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino **[OpSuma}** 3 ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[3]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[3}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Numero]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Numero}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Factor]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Factor}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Termino]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( Termino OpSuma **[Termino}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Termino OpSuma Valor]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Termino OpSuma Expresion}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = ( **[Valor]** ) * 2 FIN
+⇒ INICIO anotar Tipo Identificador = ( **[Expresion}** ) * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = **[( Valor )]** * 2 FIN
+⇒ INICIO anotar Tipo Identificador = **[( Expresion )}** * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Factor]** * 2 FIN
+⇒ INICIO anotar Tipo Identificador = **[Factor}** * 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor **[*]** 2 FIN
+⇒ INICIO anotar Tipo Identificador = Factor **[*}** 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor **[OpMul]** 2 FIN
+⇒ INICIO anotar Tipo Identificador = Factor **[OpMul}** 2 FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[2]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[2}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Numero]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Numero}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Factor]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Factor}** FIN
 
-⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Termino]** FIN
+⇒ INICIO anotar Tipo Identificador = Factor OpMul **[Termino}** FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Factor OpMul Termino]** FIN
+⇒ INICIO anotar Tipo Identificador = **[Factor OpMul Termino}** FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Termino]** FIN
+⇒ INICIO anotar Tipo Identificador = **[Termino}** FIN
 
-⇒ INICIO anotar Tipo Identificador = **[Valor]** FIN
+⇒ INICIO anotar Tipo Identificador = **[Expresion}** FIN
 
-⇒ INICIO anotar **[anotar Tipo Identificador = Valor]** FIN
+⇒ INICIO anotar **[anotar Tipo Identificador = Expresion}** FIN
 
-⇒ INICIO **[Asignacion]** FIN
+⇒ INICIO **[Asignacion}** FIN
 
-⇒ INICIO **[Sentencia]** FIN
+⇒ INICIO **[Sentencia}** FIN
 
-⇒ INICIO Sentencia **[λ]** FIN
+⇒ INICIO Sentencia **[λ}** FIN
 
-⇒ INICIO Sentencia **[Sentencias]** FIN
+⇒ INICIO Sentencia **[Bloque}** FIN
 
-⇒ INICIO **[Sentencias]** FIN
+⇒ INICIO **[Bloque}** FIN
 
 Programa
