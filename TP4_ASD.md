@@ -71,7 +71,3 @@ FIN.
 | `#`                                                                                                    | `.`                                         | `δ(q2, ., .) = (q2, λ)`                                                     |
 | `λ`                                                                                                    | `λ`                                         | `δ(q2, λ, #) = (q3, λ)  ACCEPT`                                             |
 
-
-
-<img width="412" height="828" alt="image" src="https://github.com/user-attachments/assets/3ff55551-5018-44d0-9118-558312ab8215" />
-
