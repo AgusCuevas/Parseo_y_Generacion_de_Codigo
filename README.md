@@ -1,4 +1,4 @@
-# Parseo_y_Generacion_de_Codigo
+# Parseo y generación de código
 
 ## Scanner
 
