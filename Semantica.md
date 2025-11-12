@@ -71,10 +71,10 @@ FIN.
 |   5  | `anotar nota mayor = n1`                          | Declarar `mayor: nota`; `nota ← nota`                                       | Asignación: `nota ← numero` =**OK**            |            `mayor=8`            |
 |   6  | `evaluar ( n2 > n1 )`                             | Tipar `n2>n1`: ambos `nota` → comparación ordenada válida; resultado `bool` | `nota vs nota` para `>` = **OK**               |       **false** (6>8 es falso)  |
 |   7  | `si pasa:` bloque                                 | Requiere evaluar `bool == true`                                             | Condición calculada: **false**                 |              **No**             |
-|   8  | `anotar mayor = n2` (en bloque)                   | (Se saltea por condición falsa)                                             | —                                              |                 -               |
-|   9  | `mostrar "Se modifico la mayor nota"` (en bloque) | (Se saltea)                                                                 | —                                              |                 -               |
+|   8  | `anotar mayor = n2` (en bloque)                   | (Se saltea por condición falsa)                                             |                      —                         |                 -               |
+|   9  | `mostrar "Se modifico la mayor nota"` (en bloque) | (Se saltea)                                                                 |                      —                         |                 -               |
 |  10  | `mostrar mayor`                                   | Verificar que se puede imprimir `nota` como texto                           | Conversión                                     |         **Imprime `8`**         |
-|  11  | `FIN.`                                            | Cerrar                                                                      | —                                              |                OK               |
+|  11  | `FIN.`                                            | Cerrar                                                                      |                      —                         |                OK               |
 
 ### Salida del programa:
 ```
