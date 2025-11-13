@@ -10,7 +10,6 @@ get_lexer = lexer_spec.build_lexer
 HUBO_ERROR = False
 
 def _fin_ok():
-    # solo “correctamente” si NO hubo errores ni en parser ni en lexer
     if not HUBO_ERROR and not getattr(lexer_spec, "LEXER_HUBO_ERROR", False):
         print("La operación se completó correctamente.")
 
@@ -265,4 +264,5 @@ def p_error(p):
 
 # ============== Constructor ==============
 def build_parser():
+
     return yacc.yacc(start='programa')
