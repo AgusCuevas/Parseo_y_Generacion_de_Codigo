@@ -1,8 +1,13 @@
 # Parseo y generación de código
 
 ## Scanner
+([Scanner](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/Lenguaje_Academico/src/Scanner/lexer_spec.py))
 
 ## Parser
+([Parser](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/Lenguaje_Academico/src/Parser/parser_spec.py))
+
+## Pruebas
+([Pruebas](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/tree/main/Lenguaje_Academico/src/Pruebas))
 
 ## TP1
 Mapa conceptual - Traductor ([TP 1](https://github.com/AgusCuevas/Parseo_y_Generacion_de_Codigo/blob/main/TP1_Cuadro.md))
